@@ -27,7 +27,7 @@
 * Move the map around
 * Zoom in/out
 * "Return to the Default View" button (US)
-* Color coded datapoints: To indicate the number of internships a specific company/location has given internships to WWU Engineers 
+* Color coded datapoints: To indicate the number of internships a specific company/location has given internships to WWU Engineers  
 
 ### Filters
 #### Admin
@@ -36,7 +36,7 @@
 #### User
 * Filter option for each of the user data fields
 * Year/range of years filter: If an internship has taken place even for a single month during the filtered range, it shows up on the map
-![YearFilterBarExample](https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommunity.powerbi.com%2Ft5%2FCustom-Visuals-Development%2FHow-to-have-date-slider-with-just-only-Months-and-year%2Ftd-p%2F2118290&psig=AOvVaw1TKiJUHDNRqLsDvJNVbIRq&ust=1666069337685000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPC3mY6-5voCFQAAAAAdAAAAABAJ) 
+<img src = "https://community.powerbi.com/t5/image/serverpage/image-id/607317i87F4CCD4AAC6CBEC/image-size/medium?v=v2&px=400"> 
 
 ## Other
 * What happens if a person has multiple internships at the same company and location?
