@@ -1,16 +1,18 @@
 # Project Requirements
 ## Editable Database
+Note: The minimum required data to display on the map view is the Student Name, Company Name, and Company Location (Address). All other data is preferrable, but not required. Internships that do not meet the minimum requirements for the map can be seen in the List View.
 ### Headers
 #### Admin
 * Student Name
 * Student Contact Info (email & phone number): Make this information requestable for interested students 
 
-#### User (Required Info)
+#### User
 * Internship Location (longitude & latitude calculated using the company's address): This will not be an enterable field, but a calculated one
 * Company Name
 * Company Contact Info (email, phone number, address): email and phone number can be optional, but preferrable if possible
-* Date of Internship (startMonth, startYear - endMonth, endYear): This is used for data relevancy and filtering
+* Date of Internship (startQuarter, startYear - endQuarter, endYear): This is used for data relevancy and filtering using the quarter system
 * Engineering Concentration 
+* Paid/Unpaid
 
 ### Functionality
 #### Admin
@@ -18,7 +20,7 @@
 * Form to add new internees to database without interacting directly with the database 
 
 ## Web App
-### Map (plot location data points)
+### Map (plot location data points) or List View
 #### Admin
 * See admin header data on selected map datapoints 
 
@@ -28,6 +30,7 @@
 * Zoom in/out
 * "Return to the Default View" button (US)
 * Color coded datapoints: To indicate the number of internships a specific company/location has given internships to WWU Engineers  
+* Showing # Internships out of # Filtered (for use when map moved or zoomed)
 
 ### Filters
 #### Admin
@@ -35,7 +38,7 @@
 
 #### User
 * Filter option for each of the user data fields
-* Year/range of years filter: If an internship has taken place even for a single month during the filtered range, it shows up on the map
+* Date range filter: If an internship has taken place at all during a single quarter in the filtered range, it shows up on the map
 <img src = "https://community.powerbi.com/t5/image/serverpage/image-id/607317i87F4CCD4AAC6CBEC/image-size/medium?v=v2&px=400"> 
 
 ## Other
