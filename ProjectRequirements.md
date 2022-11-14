@@ -7,12 +7,12 @@ Note: The minimum required data to display on the map view is the Student Name, 
 * Student Contact Info (email & phone number): Make this information requestable for interested students 
 
 #### User
-* Internship Location (longitude & latitude calculated using the company's address): This will not be an enterable field, but a calculated one
 * Company Name
 * Company Contact Info (email, phone number, address): email and phone number can be optional, but preferrable if possible
 * Date of Internship (startQuarter, startYear - endQuarter, endYear): This is used for data relevancy and filtering using the quarter system
 * Engineering Concentration 
 * Paid/Unpaid
+* (Calculated) Internship Location (longitude & latitude calculated using the company's address)
 
 ### Functionality
 #### Admin
