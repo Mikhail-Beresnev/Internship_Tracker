@@ -91,22 +91,39 @@ class _MyHomePageState extends State<MyHomePage> {
             endIndent: 0,
             color: Colors.black,
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              OutlinedButton(
-                onPressed: () => {},
-                child: const Text('TextButton'),
-              ),
-              const Text(
-                'You have pushed the button this many times:',
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-            ],
-          ),
+          Container(
+            child: Column(
+              children: [
+                ConstrainedBox(
+                  constraints: const BoxConstraints.expand(height: 300),
+                  child: Card(
+                    child: Row(
+                      children: [
+                        Column(
+                          children: const [
+                            Text('Company: '),
+                            Text('Timeline: '),
+                          ],
+                        ),
+                        Column(
+                          children: const [
+                            Text('Compensation: '),
+                            Text('Location: '),
+                          ],
+                        ),
+                        Column(
+                          children: const [
+                            Text('Email: '),
+                            Text('Concentration: '),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
