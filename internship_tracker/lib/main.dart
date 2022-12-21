@@ -91,39 +91,37 @@ class _MyHomePageState extends State<MyHomePage> {
             endIndent: 0,
             color: Colors.black,
           ),
-          Container(
-            child: Column(
-              children: [
-                ConstrainedBox(
-                  constraints: const BoxConstraints.expand(height: 300),
-                  child: Card(
-                    child: Row(
-                      children: [
-                        Column(
-                          children: const [
-                            Text('Company: '),
-                            Text('Timeline: '),
-                          ],
-                        ),
-                        Column(
-                          children: const [
-                            Text('Compensation: '),
-                            Text('Location: '),
-                          ],
-                        ),
-                        Column(
-                          children: const [
-                            Text('Email: '),
-                            Text('Concentration: '),
-                          ],
-                        ),
-                      ],
-                    ),
+          Column(
+            children: [
+              ConstrainedBox(
+                constraints: BoxConstraints.expand(height: 300),
+                child: Card(
+                  child: Row(
+                    children: [
+                      Column(
+                        children: const [
+                          Text('Company: '),
+                          Text('Timeline: '),
+                        ],
+                      ),
+                      Column(
+                        children: const [
+                          Text('Compensation: '),
+                          Text('Location: '),
+                        ],
+                      ),
+                      Column(
+                        children: const [
+                          Text('Email: '),
+                          Text('Concentration: '),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
-              ],
-            ),
-          )
+              ),
+            ],
+          ),
         ],
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
