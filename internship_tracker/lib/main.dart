@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './fliters.dart';
+import './list_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -67,6 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  var test = companyCard('Stooge1', 'Fall 2020 - Spring 2021', 'Paid',
+      'Universal City, CA', 'Stooge1@stoogeengineering.com', 'Civil');
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -91,37 +95,38 @@ class _MyHomePageState extends State<MyHomePage> {
             endIndent: 0,
             color: Colors.black,
           ),
-          Column(
-            children: [
-              ConstrainedBox(
-                constraints: BoxConstraints.expand(height: 300),
-                child: Card(
-                  child: Row(
-                    children: [
-                      Column(
-                        children: const [
-                          Text('Company: '),
-                          Text('Timeline: '),
-                        ],
-                      ),
-                      Column(
-                        children: const [
-                          Text('Compensation: '),
-                          Text('Location: '),
-                        ],
-                      ),
-                      Column(
-                        children: const [
-                          Text('Email: '),
-                          Text('Concentration: '),
-                        ],
-                      ),
-                    ],
-                  ),
+          Expanded(
+            child: SingleChildScrollView(
+              controller: ScrollController(),
+              scrollDirection: Axis.vertical,
+              child: SingleChildScrollView(
+                // controller: ScrollController(),
+                // scrollDirection: Axis.horizontal,
+                child: Column(
+                  children: [
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                    test,
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+          )
         ],
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
