@@ -91,12 +91,12 @@ class _MyHomePageState extends State<MyHomePage> {
             endIndent: 0,
             color: Colors.black,
           ),
-          Container(
+          Expanded(
             child: Column(
               children: [
-                ConstrainedBox(
-                  constraints: const BoxConstraints.expand(height: 300),
-                  child: Card(
+                Card(
+                  child: SizedBox(
+                    height: 50,
                     child: Row(
                       children: [
                         Column(
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
