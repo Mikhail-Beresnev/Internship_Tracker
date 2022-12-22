@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './fliters.dart';
 import './list_view.dart';
+import './map_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,38 +96,12 @@ class _MyHomePageState extends State<MyHomePage> {
             endIndent: 0,
             color: Colors.black,
           ),
+          // listView(),
           Expanded(
-            child: SingleChildScrollView(
-              controller: ScrollController(),
-              scrollDirection: Axis.vertical,
-              child: SingleChildScrollView(
-                // controller: ScrollController(),
-                // scrollDirection: Axis.horizontal,
-                child: Column(
-                  children: [
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                    test,
-                  ],
-                ),
-              ),
+            child: SizedBox(
+              child: getMap(),
             ),
-          )
+          ),
         ],
       ),
       // floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
